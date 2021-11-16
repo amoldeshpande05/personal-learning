@@ -32,14 +32,13 @@ class Solution:
         if head == None or head.next == None:
             return False
         slow = head
-        fast = head.next
-        
+        fast = head
         while slow and fast:
-            if slow == fast:
-                return True
             try:
                 slow = slow.next
                 fast = fast.next.next
+                if slow == fast:
+                    return True
             except:
                 return False
         

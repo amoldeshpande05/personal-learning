@@ -1,4 +1,5 @@
 Install jenkins on local with docker docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+https://sampath5898ch.medium.com/ci-cd-with-jenkins-pipeline-nodejs-into-k8s-part-1-fd816c63b733
 To start a hello world pipeline
 Go to create new item > give a name > scroll at last and select hello world script and save and exit
 Come to the home page and click on build now, hello world is executed

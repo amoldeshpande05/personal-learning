@@ -1,0 +1,27 @@
+FROM jenkins/jenkins:lts
+# if we want to install via apt
+
+# drop back to the regular jenkins user - good practice
+USER root
+
+RUN curl -fsSL https://clis.cloud.ibm.com/install/linux | sh &&\ 
+    # Install the IBM Cloud Kubernetes Service CLI
+    ibmcloud plugin install container-service &&\
+    # Install the IBM Cloud Container Registry CLI
+    ibmcloud plugin install container-registry
+
+RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+RUN chmod +x ./kubectl
+RUN mv ./kubectl /usr/local/bin
+
+
+RUN curl -sSL https://get.docker.com/ | sh
+
+
+
+# USER root
+
+# docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins
+
+
+

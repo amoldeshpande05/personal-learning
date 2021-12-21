@@ -1,3 +1,0 @@
-oauth is used for delegated access just like the vallet key.
-oauth is used for authorization
-Just like when we are trying to login with social media like face book and twitter, we send the request with oauth, with selected list of permissions, then the ui redirects to the twitter, you loggin, accepts the permission, the data is sent back to the server and the user is logged in

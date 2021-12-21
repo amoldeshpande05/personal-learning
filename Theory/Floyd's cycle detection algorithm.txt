@@ -1,3 +1,0 @@
-Floyd's cycle detection Algorithm:
-    Slow and fast pointer where slow pointer will go by one, fast pointer will go by two elements. And go on till the end. If someone reaches the Null or end first then there is not a cycle, exit it. if not then at one point slow pointer is equal to fast pointer then exit it.
-    Find out the cycle by floyd's cycle detection algorithm, once you find, store that meeting point. the algorithm also states that if we go on continuing by incrementing head and the meet pointer, We will end up at the point at which the cycle is taking place

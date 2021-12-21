@@ -1,0 +1,75 @@
+To Learn:
+The basic way to erform a basic reset using universal selector;
+How to set roject-wide font definations;
+How to clip parts of elements using clip-path
+
+
+
+
+1. Universal Selector: when we want to apply some styles to all the elements in our page
+write something like 
+* {
+    //Css code
+}
+
+2. By Default, any browser will add some padding to our website, to avoid that, initally add padding to zero.
+ 
+3.     box-sizing: border-box;    - which means borders and padding are no longer added to the total width and height we specify for the box
+
+4. We can add fonts in the header of html itself and directly link itself <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+
+* vh stands for viewport height and vw is for viewport width. Hence, setting an element to a width value of 50vw means that the element will have a width that's 50% of the viewport size, and this stays true when the viewport is resized.
+ height: 95vh; which means 95 percent of the available height
+
+* background-size: cover; it will cover the viewport height or width which is opened
+
+* background-position: top|center|bottom   - this will make sure that the image will stick at that position when the size of the window is being resized manually or automatically
+
+5. linear-gradient: This is the concept to give a light color on our bacground image or just our bacground, we can increase or decrease the opacity and boom, the nice flaovour on your website is on.
+    background-image:linear-gradient(to right bottom,#7ed56f42,#28b4853f) , url('../img/hero.jpeg');
+    We can specify prior to the url of the image from bacground-image attribute
+    background-image:linear-gradient(to right bottom,hsla(111, 55%, 64%, 0.801),hsla(160, 64%, 43%, 0.801)) , url('../img/hero.jpeg');
+
+6. Concept called clip-path, which will clip our division
+ - to make a triangle, hexacon anything, just visit this website
+    https://bennettfeely.com/clippy/
+
+
+7. Absolute positining should always have parent relative so that it will take parents as a container reference and be Absolute.
+  text-transform: uppercase; will change the lowercase to upper case
+
+8. display: block ;  // block elements create line breaks before and after... Block occupies 100% of the width, suppose if we want an element to be the king in that width, then use display block
+
+
+
+9. How to add the text in the center as the heading, first make sure that the parent body is relative with bla bla view port.
+    - Add a division tag and give a class name, and in the css, make sure the position is Absolute, top 50% and left 50%, which will be exactly the center, but the problem is that it will start at center but it looks like it's a right padded component, so to overcome that, write a transform method where we transform the text 50% to the left and top. By doing this the element will be exactly center.
+    - transform: translate(-50%,-50%);
+
+10 Animations:
+    Like mentioned, there are two types of animation, write transform or do onHover.
+
+11. Write about transition and how we assign it
+
+12. pseudo classes are the concept which are attached to action items like button or anchor tag. It is used to perform specific action
+        .btn:link{
+
+        }
+        .btn:visited{
+
+        }
+    keyframes :
+    it is the concept where we specify the transition properties.
+
+
+
+Three pillers:
+1. Responsive design - one website with all device screen size
+2. Maintainable and scalable code.
+3. Web performance
+
+
+Load the html, parse the html, load the css, resolve all the conflicts, document object model, css object model, render tree, website rendering : the visual formatting model, final rendered website
+
+

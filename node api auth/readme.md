@@ -1,0 +1,3 @@
+Working with jwt token
+
+When the user logs in, generate the jwt token with some secrete key with the timespan and send it to the frontend, there will be logic in the front end to store the token in the localstorage, for every request, the user has to send the jwt token, and all the apis from backend will verify it through middle wear, when it expires, all the apis will automatically stop working and the frontend can redirect the user to the login screen

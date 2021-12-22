@@ -72,4 +72,53 @@ Three pillers:
 
 Load the html, parse the html, load the css, resolve all the conflicts, document object model, css object model, render tree, website rendering : the visual formatting model, final rendered website
 
+.myclass  - class selector
+{
+-delclartion
+}
 
+
+
+
+
+---------------------- sass vs scss ----------------------
+
+sass - css much more awesome, make css better, more effecient, took out curly braces , removed the ;
+scss- sassi css,  css syntax with powerful features from sass
+scss - syntactcally awesome style stylesheet
+
+scss:
+- More feautures.
+- we can define the variables.
+- We can use @imports
+- footer {
+    div {
+        p {
+            margin: 2rem;
+            color: #2f2f2f;
+        }
+    }
+}
+we can use nested logics etc.
+
+
+
+
+
+
+
+
+------ display property in css --------
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+display - inline, will display all the elements inside the component one after another like in a line
+
+block
+The element generates a block element box, generating line breaks both before and after the element when in the normal flow.
+inline
+The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space
+
+
+rem vs px vx em
+
+when the sizes are in px, by going to the browser and changint the fontsize won't change the actual size.
+to change the actual size use the rem

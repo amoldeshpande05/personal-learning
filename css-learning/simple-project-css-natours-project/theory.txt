@@ -122,3 +122,6 @@ rem vs px vx em
 
 when the sizes are in px, by going to the browser and changint the fontsize won't change the actual size.
 to change the actual size use the rem
+
+
+In CSS, a margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element

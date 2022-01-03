@@ -88,3 +88,20 @@ The time complexity is O(n+m) and O(n*m) space complexity
     - add a memo object
     - add a base case to return memo values
     - store return value in the memo
+
+
+
+We walked through, canSum, How Sum, Best Sum.
+canSum - > Decision problem
+howSum -> combinatoric problem
+bestSum -> Optimization Problem
+
+
+
+
+
+Traget
+canConstruct(abcdef, [ab,abc,cd,def,abcd]) -> True
+canConstruct(skateboard, [bo,rd,ate,t,ska,sk,boar]) -> False
+canConstruct('', [cat,dog,mouse]) -> True
+

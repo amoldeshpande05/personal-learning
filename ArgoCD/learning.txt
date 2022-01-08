@@ -1,0 +1,13 @@
+Initially we used to deploy with jenkins
+Problem:
+1. Install and setup tools like kubectl,docker,ibmcloud ... etc
+2. Configure access to k8, ibmcloud etc
+3. configure access to ibmcloud
+4. Security challenge, as the credentials might be compromised
+5. No visiblity of deployment status
+
+
+ARGOCD was built to deploy to kubernates
+
+Instead of present in the separate server, the ARGOCD is part of k8s cluster.
+ArgoCD agent pulls k8s manifest changes and applies them

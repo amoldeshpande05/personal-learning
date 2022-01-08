@@ -1,0 +1,83 @@
+Decimal Number: Computer first converts this to binary and then operate
+
+How to convert binary number into Decimal
+101   -> 1 * 2^2 + 0 * 2^1 + 1 *2^0 = 5
+
+How to convert Decimal number to binary
+> Go on taking the lcm of the number with 2, and go on adding the reminder, that will be  your binary
+> Best approach, go on dividing the numer with 2, if the number is odd then add 1, or add 0, go on until you get 1
+
+
+
+- Adding the two binary digits 
+1 0 1 =>5
+1 1 1 =>7
+
+1 + 1 = 0 and carry 1
+1 + 0 + 1 = 0 and carry 1
+1 + 1 + 1 = 1 and carry 1
+1 + 0 = 1
+total result is 1100 = 12
+
+
+Substraction is completely different:
+ 
+ 9 - 7 should be written as 9 + (-7)
+ we have to inverse the substract operand
+
+ how to find the negative inverse????
+ - > by 2's compliement
+     - invert all bits
+       add one
+
+
+Right shift operator
+12 >> 6 
+1100   >> 0110  
+
+>>> 12>>1
+6
+>>> 12>>2
+3
+Whenever we are doing right shift operator, we are dividing the number by 2
+
+Left shift operator
+
+whenever we are doing left shift operator, we are multiplying the number by 2
+
+
+
+
+
+
+
+
+Find even or odd number. Since % is very expensive.
+Notice a pattern, all the even number's binary bit is always 0,
+Notice a pattern, all the odd number's binary bit is always 1
+Now how to get the last bit?
+- By the concept of masking. 
+The solution is as follows
+ -> if a number & 1 == 0 then it's even or else 1
+
+before a % 2 == 0 then even 
+or it's odd
+
+
+after:
+    if a & 1 == 0:
+         even
+    else 
+        odd
+
+https://www.youtube.com/watch?v=Db8OmMfzwl8
+https://www.youtube.com/watch?v=h7meukyY_bQ
+
+
+
+
+
+
+Bit Masking
+
+

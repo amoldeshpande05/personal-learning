@@ -1,0 +1,11 @@
+tips and Tricks
+
+1. How to sort dictionary by value or key??????
+    temp = {k: temp[k] for k in sorted(temp)}   -> where temp is a dictionary and it is sorted by keys
+    temp = {k: v for k,v in sorted(temp.items(), key=operator.itemgetter(1))}  - sorted  y values
+
+
+
+
+Boyer-moore majority vote algorithm
+

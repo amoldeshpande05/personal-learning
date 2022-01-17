@@ -75,9 +75,56 @@ https://www.youtube.com/watch?v=h7meukyY_bQ
 
 
 
+FINDING THE NUMBER OF 1's in Number bits
+
+loop N = N & (N-1) untill 0, and have a count it will run untill you get the total number of bits
+
+
+FINDING THE RIGHT MOST SET Bit
+NUMBER & (-NUMBER) will give the right most set bit and rest all 0's
 
 
 
-Bit masking n
 
 
+Bit masking
+1. Find the ith bit. Now how to find that?
+    AND the number with a number consisting on 0's with i'th position as 1
+    eg: n-> 1 0 0 1 1 0 1 0 1
+     mask-> 0 0 0 1 0 0 0 0 0
+
+     now if you get 1 means the i'th number is 1 or it is 0
+
+     code : 1 << (left shift) i time
+2. Set ith bit to 1
+    n -> 1 0 0 1 1 0 1 0 1 
+    m -> 0 0 0 0 0 1 0 0 0
+Find the mask and do OR then you will automatically set the bit
+mask = 1 << i  n  = n | mask
+
+
+3. Now the tricky question comes when we want to change ith value to 0 from 1
+n -> 1 0 0 1 1 0 1 0 1
+     1 1 1 1 0 1 1 1 1
+     Mask with 1, and then ith position will be 0, and do AND
+     how to find mask of 1, shift i times <<i and then negate the byte. 
+ 
+
+4. To 
+
+
+XOR properties:
+if same number then 0, if different number then 1.
+properties:
+1)  5^5 = 0
+2)  0^n = 0
+
+
+Tips and Tricks
+1.  X&(X-1) - > will clear the lowest set bit
+2.  X & ~(X-1) -> Extracts the lowest set bit
+3.  x & (x+(1<<n)) -> Run of set bits starting at bit n cleared   - findout
+4.  x & ~(x+(1<<n)) - > Run of set bits in X, starting at bit n    - findout
+5.  x | (x+1) - > x with lowest cleared bit set    - findout
+6. x | (x - (1 << n)) = x, with the run of cleared bits (possibly length 0) starting at bit n set  -findout
+7 . x | ~(x - (1 << n)) = the lowest run of cleared bits (possibly length 0) in x, starting at bit n are the only clear bits.  - findout

@@ -1,0 +1,3 @@
+Permutations: no of ways the group of things can be arranged
+eg: 
+ABC

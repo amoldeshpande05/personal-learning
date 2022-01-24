@@ -4,20 +4,23 @@
 #  All the inputs are non negative
 
 
-# finalNumbers = []
-# def howSum(targetSum,numbers):
-#     global finalNumbers
-#     if targetSum == 0:
-#         return True
-#     if targetSum < 0:
-#         return False
+finalNumbers = []
+def howSum(targetSum,numbers):
+    global finalNumbers
+    if targetSum == 0:
+        return True
+    if targetSum < 0:
+        return False
     
-#     for num in numbers:
-#         reminder = targetSum - num
-#         result = howSum(reminder,numbers)
-#         if result:
-#             finalNumbers.append(num)
-#             return finalNumbers
+    for num in numbers:
+        reminder = targetSum - num
+        result = howSum(reminder,numbers)
+        if result:
+            finalNumbers.append(num)
+            return finalNumbers
+        
+
+print(howSum(8,[2,3,5,1]))
 
 # time: O(n^m)
     
@@ -28,27 +31,26 @@
 # Memorization
 
 
-finalNumbers = {}
-memo = {}
-def howSum(targetSum,numbers):
-    global finalNumbers
-    global memo
-    if targetSum == 0:
-        return []
-    if targetSum < 0:
-        return None
+# finalNumbers = {}
+# memo = {}
+# def howSum(targetSum,numbers):
+#     global finalNumbers
+#     global memo
+#     if targetSum == 0:
+#         return []
+#     if targetSum < 0:
+#         return None
     
-    for num in numbers:
-        reminder = targetSum - num
-        result = howSum(reminder,numbers)
-        if result != None:
-            finalNumbers[targetSum]= result + [num]
-            return finalNumbers[targetSum]
-    finalNumbers[targetSum] = None
-    return finalNumbers[targetSum]
+#     for num in numbers:
+#         reminder = targetSum - num
+#         result = howSum(reminder,numbers)
+#         if result != None:
+#             finalNumbers[targetSum]= result + [num]
+#             return finalNumbers[targetSum]
+#     finalNumbers[targetSum] = None
+#     return finalNumbers[targetSum]
 # time: O(n^m)
     
-print(howSum(8,[2,3,5]))
 
 
 

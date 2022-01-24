@@ -1,19 +1,20 @@
-const canConstruct=(target,wordBank) =>{
+const canConstruct=(target,wordBank,memo={}) =>{
+    console.log(memo)
+    if(target in memo) return memo[target]
     if(target === ''){
         return true;
     }
-
     for(let word of wordBank){
         if(target.indexOf(word) === 0){
             const suffix = target.slice(word.length);
-            console.log(suffix)
-            if(canConstruct(suffix,wordBank) === true){
+            if(canConstruct(suffix,wordBank,memo) === true){
+                memo[suffix] = true
                 return true;
             }
         }
     }
-
+    memo[target] = false
     return false;
 }
 
-console.log(canConstruct("skateboard",["bo","rd","ate","t","ska","sk","boar"]))
+console.log(canConstruct("enterapotentpots",["a","p","ent","enter","ot","o","t"]))

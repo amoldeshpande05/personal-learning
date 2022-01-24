@@ -24,20 +24,20 @@ print(canSum(12,[3,3,3]))
 
 
 
-def canSum(targetSum,numbers):
-    combination = None
-    if targetSum == 0:
-        return []
-    if targetSum < 0:
-        return False
+# def canSum(targetSum,numbers):
+#     combination = None
+#     if targetSum == 0:
+#         return []
+#     if targetSum < 0:
+#         return False
    
-    for i in numbers:
-        rem = targetSum - i
-        result = canSum(rem,numbers)
-        if result != False:
-            combination = result + [i]
-            return combination
+#     for i in numbers:
+#         rem = targetSum - i
+#         result = canSum(rem,numbers)
+#         if result != False:
+#             combination = result + [i]
+#             return combination
         
-    return combination
+#     return combination
 
-print(canSum(12,[3,3,3]))
+# print(canSum(12,[3,3,3]))

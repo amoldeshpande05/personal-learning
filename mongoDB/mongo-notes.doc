@@ -1,0 +1,16 @@
+No 1nf or 2nf.
+
+Tools:
+- mongoDB
+- mongoengine
+- pymongo
+- robo3t - part commandline and part gui
+- Python C pycharm
+- mongoDB design patterns
+
+
+Introduction:
+Why mongoDB over other relational databases? 
+
+
+- Mongo DB is free. 

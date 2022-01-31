@@ -1,3 +1,14 @@
 Tabulation
 It's about building the table
 Instead of recurssion, we use iteration
+
+
+
+
+1) Visualize as a table, size is based on the inputs
+2) Initialse value within the table, it is based on the output you want, wheater its numbers, boolean or string
+3) Seed the trivial answer into the table
+4) Iterate through the table
+5) fill further positions based on the current positions 
+
+

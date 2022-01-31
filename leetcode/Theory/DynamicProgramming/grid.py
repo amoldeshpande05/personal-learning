@@ -8,6 +8,8 @@ def gridTraveler(m,n):
         return memo[(m,n)]
     memo[(m,n)] = gridTraveler(m-1,n) + gridTraveler(m,n-1)
     return memo[(m,n)]
-print(gridTraveler(3,3))
 
-print(memo)
+
+
+
+print(gridTraveler(3,3))

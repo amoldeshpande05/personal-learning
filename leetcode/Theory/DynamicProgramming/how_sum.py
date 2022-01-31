@@ -20,8 +20,7 @@ def canSum(targetSum,numbers):
         
     return combination
 
-print(canSum(12,[3,3,3]))
-
+print(canSum(542,[3,2,3,4,5,7,8,3,1]))
 
 
 # def canSum(targetSum,numbers):

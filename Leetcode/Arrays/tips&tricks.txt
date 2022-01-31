@@ -8,4 +8,12 @@ tips and Tricks
 
 
 Boyer-moore majority vote algorithm
+- adding and substracting a particular key
+TODO
 
+
+2. Initialse the 1D array
+    - arrayList = [0]*n
+
+3. Initialse 2D array
+    - arrayList = [[0]*col]*rows

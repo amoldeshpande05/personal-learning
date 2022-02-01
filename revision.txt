@@ -5,3 +5,4 @@ List questions
 4. two sum and two sum 2
 5. Intersection of two arrays II
 6. Unique Number of Occurrences
+7. Sum of unique Elements

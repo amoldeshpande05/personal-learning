@@ -1,0 +1,7 @@
+List questions
+1. Kandane's algorithm and how we try to find out the max subArray in the list
+2. 3 pointer approach for merging two sorted arrays
+3. Longest Common prefix ***
+4. two sum and two sum 2
+5. Intersection of two arrays II
+6. Unique Number of Occurrences

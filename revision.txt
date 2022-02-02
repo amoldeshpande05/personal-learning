@@ -6,3 +6,12 @@ List questions
 5. Intersection of two arrays II
 6. Unique Number of Occurrences
 7. Sum of unique Elements
+8. Kandane's algorithm and how we try to find out the max product subArray in the list
+
+
+
+
+Dynamic Programming Questions.
+1. Delete and earn technique with bottom  up approach
+2. house_robber with bottom up approach TODO
+3. min_climbing_cost with bottom up approach TODO

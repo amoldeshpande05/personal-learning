@@ -1,0 +1,2 @@
+0. Binary trees are trees where every nodes in the trees will have at most two children, max values are 2^h - 1, levels are 0 1 2 etc
+1. the trees can be stored in an array, to access the current element's left child is 2*i(index) and right is 2*i+1, to access the parent of the current index then index/2, it will return the parent

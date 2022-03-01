@@ -1,0 +1,5 @@
+Helm:
+Package manager for kubernatees - just like npm, homebrew, etc
+
+eg: application in kubernatees cluster, we want to configure the elastic search
+

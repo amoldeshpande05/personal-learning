@@ -1,0 +1,22 @@
+minikube version v1.24.0
+minikube start --addons=ingress --vm=true --memory=8192 --driver=docker
+chectl server:deploy --workspace-engine=dev-workspace --platform=minikube --version=7.41.1
+https://www.eclipse.org/che/docs/che-7/installation-guide/enabling-dev-workspace-operator/
+
+kubectl create namespace eclipse-che
+https://github.com/kubernetes/minikube/releases/download/v1.24.0/minikube-darwin-amd64
+https://che-eclipse-che.192.168.0.168.nip.io/   
+
+
+
+https://github.com/eclipse/che/issues/21128
+
+https://github.com/eclipse/che/issues/20984  - similar issue
+
+https://github.com/eclipse/che/issues/21125 - similar issue on login screen
+
+
+minikube-darwin-amd64.tar.gz
+
+
+keyklock setup - https://github.com/eclipse/che/issues/21049

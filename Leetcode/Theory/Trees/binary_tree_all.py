@@ -72,20 +72,47 @@ class BinarySearchTree:
     def display_postorder(self,root):
         if root == None:
             return;
-        
         self.display_postorder(root.left)
         self.display_postorder(root.right)
         print(root.value)
+    
+    
+    def depth_first_search(self,root):
+        # stack = [root]
+        # while len(stack) > 0:
+        #     current_node = stack.pop()
+        #     print(current_node.value)
+        #     if current_node.right:
+        #         stack.append(current_node.right)
+        #     if current_node.left:
+        #         stack.append(current_node.left)
+        # Recurssion Flow
+        if root == None:
+            return []
+        
+        left = self.depth_first_search(root.left)
+        right = self.depth_first_search(root.right)
+        return [root.value, *left,*right]
+        
+        
+
+                
+            
+        
+        
                 
                 
                 
         
 my_Tree = BinarySearchTree()
-print(my_Tree.insert(2))
-print(my_Tree.insert(1))
+print(my_Tree.insert(5))
 print(my_Tree.insert(3))
+print(my_Tree.insert(2))
+print(my_Tree.insert(4))
+print(my_Tree.insert(7))
 print(my_Tree.insert(9))
-print(my_Tree.insert(10))
+
+
 
 # print(my_Tree.insert(3))
 # print(my_Tree.insert(9))
@@ -93,18 +120,20 @@ print(my_Tree.insert(10))
 # print(my_Tree.root.left.value)
 # print(my_Tree.root.right.value)
 
-print(my_Tree.contains(9))
+# print(my_Tree.contains(9))
 # print(my_Tree.contains(6))
 
 
-print("InOrder Display  : ")
-my_Tree.display_inorder(my_Tree.root)
-print("")
-print("preOrder Display  : ")
-my_Tree.display_preorder(my_Tree.root)
-print("")
-print("postOrder Display  : ")
-my_Tree.display_postorder(my_Tree.root)
+# print("InOrder Display  : ")
+# my_Tree.display_inorder(my_Tree.root)
+# print("")
+# print("preOrder Display  : ")
+# my_Tree.display_preorder(my_Tree.root)
+# print("")
+# print("postOrder Display  : ")
+# my_Tree.display_postorder(my_Tree.root)
 
 
 
+print("depth first traversal  : ")
+print(my_Tree.depth_first_search(my_Tree.root))

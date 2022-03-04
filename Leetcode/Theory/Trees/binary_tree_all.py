@@ -93,6 +93,49 @@ class BinarySearchTree:
         left = self.depth_first_search(root.left)
         right = self.depth_first_search(root.right)
         return [root.value, *left,*right]
+    
+    def breadth_first_search(self,root):
+        queue=[root]
+        while len(queue)!=0:
+            curr_node = queue.pop(0)
+            print(curr_node.value)
+            if curr_node.left:
+                queue.append(curr_node.left)
+            if curr_node.right:
+                queue.append(curr_node.right)
+                
+    def search_element_bfs(self,root,target):
+        queue=[root]
+        while len(queue)>0:
+            curr_node = queue.pop(0)
+            if curr_node.val == target:
+                return True
+            print(curr_node.value)
+            if curr_node.left:
+                queue.append(curr_node.left)
+            if curr_node.right:
+                queue.append(curr_node.right)
+        return False
+    
+    def search_element_dfs(self,root,target):
+        if root == None:
+            return False
+        return self.search_element_dfs(root.left,target) or self.search_element_dfs(root.right,target) or root.value == target
+    
+    
+    def tree_sum(self,root):
+        if root == None:
+            return 0
+        return self.tree_sum(root.left) + self.tree_sum(root.right) + root.value
+    
+    def min_value_tree(self,root):
+        if root == None:
+            return 9999
+        result = min(self.min_value_tree(root.left),self.min_value_tree(root.right),root.value)
+        return result
+        
+
+        
         
         
 
@@ -105,12 +148,13 @@ class BinarySearchTree:
                 
         
 my_Tree = BinarySearchTree()
-print(my_Tree.insert(5))
-print(my_Tree.insert(3))
-print(my_Tree.insert(2))
-print(my_Tree.insert(4))
-print(my_Tree.insert(7))
-print(my_Tree.insert(9))
+my_Tree.insert(5)
+my_Tree.insert(3)
+my_Tree.insert(2)
+my_Tree.insert(4)
+my_Tree.insert(7)
+my_Tree.insert(9)
+my_Tree.insert(1)
 
 
 
@@ -135,5 +179,16 @@ print(my_Tree.insert(9))
 
 
 
-print("depth first traversal  : ")
-print(my_Tree.depth_first_search(my_Tree.root))
+# print("depth first traversal  : ")
+# print(my_Tree.depth_first_search(my_Tree.root))
+
+# print(my_Tree.breadth_first_search(my_Tree.root))
+
+
+# print("The value is Found  : ",my_Tree.search_element_dfs(my_Tree.root,21))
+
+
+
+# print("The sum of the tree is  : ",my_Tree.tree_sum(my_Tree.root))
+
+print("The min value of the tree is  : ",my_Tree.min_value_tree(my_Tree.root))

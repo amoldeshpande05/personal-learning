@@ -20,6 +20,7 @@ List and dict questions
 
 maths med problem:
 1. Arithmetic Slices
+2. champagneTower
 
 
 String Questions:

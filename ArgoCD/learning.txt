@@ -7,7 +7,7 @@ Problem:
 5. No visiblity of deployment status
 
 
-ARGOCD was built to deploy to kubernates
+ARGOCD was built to deploy to kubernetes
 
 Instead of present in the separate server, the ARGOCD is part of k8s cluster.
 ArgoCD agent pulls k8s manifest changes and applies them

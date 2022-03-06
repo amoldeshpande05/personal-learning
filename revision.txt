@@ -13,6 +13,14 @@ List and dict questions
 14. Search Insert Position - Binary
 15. Merge Sorted Array
 16. VALID PALLINDROME
+17. Find the 1st min and 2nd min from an array  : https://leetcode.com/playground/FsfQxi5S
+18. length Of Longest Sub string
+
+
+
+maths med problem:
+1. Arithmetic Slices
+
 
 String Questions:
 1. Longest Common prefix 
@@ -30,6 +38,8 @@ Trees
 1. same-tree easy question
 2. maximum-depth-of-binary-tree.py
 3. convert-sorted-array-to-binary-search-tree.py
+4. second-minimum-node-in-a-binary-tree
+5. minimum-depth-of-binary-tree.py
 
 
 

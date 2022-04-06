@@ -12,7 +12,7 @@ def maxProfit(nums):
     for i in nums:
         currSum+=i
         # Add the profit
-        if maxSum < currSum:
+        if maxSum < currSum:    
             maxSum = currSum
         
         if currSum<0:

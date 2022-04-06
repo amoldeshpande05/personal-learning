@@ -15,6 +15,11 @@ List and dict questions
 16. VALID PALLINDROME
 17. Find the 1st min and 2nd min from an array  : https://leetcode.com/playground/FsfQxi5S
 18. length Of Longest Sub string
+19: partition algorithm and quick sort
+20: kth-largest-element-in-an-array
+21: sort-colors leetcode
+22: rotate-array
+23: https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1/#
 
 
 

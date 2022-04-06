@@ -8,5 +8,5 @@ def reverseArray(num):
     return num
 
 
-print("reverse String  : ",reverseArray([1,2,3,4]))
+print("reverse String  : ",reverseArray(['1','2',3,4]))
         
